@@ -1,0 +1,738 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: black;
+}
+
+.icon:hover {
+  opacity: 80%;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+/* Обнуление */
+
+body {
+  background-image: url(photo/bgic.jpg);
+  background-attachment: fixed;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  /* background-color: rgb(96, 93, 93); */
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 36px 30px 3px rgba(34, 60, 80, 0.2);
+  z-index: 100;
+}
+
+.logo {
+  width: 150px;
+  height: 60px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.nav__item {
+  /* color: white; */
+  color: black;
+  font-weight: bold;
+}
+
+.nav__item:nth-child(1) {
+  border-right: 2px solid rgb(164, 164, 164);
+  padding-right: 90px;
+}
+
+.search {
+  border-radius: 10px;
+  text-align: center;
+  height: 30px;
+  width: 300px;
+}
+
+.main {}
+
+.main__wrapper {
+  margin: 0 20%;
+  height: 100%;
+  background-color: rgba(33, 33, 33, 0.944);
+}
+
+.main__news {
+  padding-top: 63px;
+  margin-bottom: 60px;
+}
+
+.news__title {
+  color: white;
+  padding: 10px 30px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.news__title a {
+  font-size: 30px;
+  color: white;
+}
+
+.news-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news__item {
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.news__item:hover {
+  transform: scale(1.01);
+  padding: 0;
+}
+
+.news__item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(32, 28, 43, 0), #201c2b);
+  z-index: 2;
+}
+
+.news__item-image {}
+
+.news__item-text {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1.5rem;
+  box-sizing: border-box;
+  width: 90%;
+  color: white;
+  z-index: 10;
+  font-size: 20px;
+}
+
+.starwars {
+  flex: 0 0 50%;
+  max-width: 50%;
+  overflow: hidden;
+  width: 50%;
+}
+
+.witcher {
+  flex: 0 0 50%;
+  max-width: 50%;
+  overflow: hidden;
+  width: 50%;
+}
+
+.cyberpunk {
+  flex: 0 0 100%;
+  max-width: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.starwars-photo {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.witcher-photo {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cyberpunk-photo {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.main__popular {}
+
+.popular__title-box {
+  padding: 10px 30px;
+  width: 100%;
+  margin-bottom: 30px;
+
+}
+
+.popular__title {
+  color: white;
+  font-size: 30px;
+}
+
+.popular__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popular__card {
+  width: 95%;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.179);
+  border-radius: 6px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular__card:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+
+.card__photo {
+  margin-right: 10px;
+}
+
+.card__name {
+  color: white;
+}
+
+.card__rate {
+  color: white;
+}
+
+.card__price {
+  color: white;
+}
+
+.c1:hover::after {
+  content: "98%";
+  position: absolute;
+  background: rgba(5, 13, 156, 0.55);
+  color: #fff;
+  text-align: center;
+  font-family: cursive;
+  font-size: 14px;
+  padding: 5px;
+  width: 100%;
+}
+
+.c2:hover::after {
+  content: "82%";
+  position: absolute;
+  background: rgba(5, 13, 156, 0.55);
+  color: #fff;
+  text-align: center;
+  font-family: cursive;
+  font-size: 14px;
+  padding: 5px;
+  width: 100%;
+}
+
+.c3:hover::after {
+  content: "87%";
+  position: absolute;
+  background: rgba(5, 13, 156, 0.55);
+  color: #fff;
+  text-align: center;
+  font-family: cursive;
+  font-size: 14px;
+  padding: 5px;
+  width: 100%;
+}
+
+.c4:hover::after {
+  content: "91%";
+  position: absolute;
+  background: rgba(5, 13, 156, 0.55);
+  color: #fff;
+  text-align: center;
+  font-family: cursive;
+  font-size: 14px;
+  padding: 5px;
+  width: 100%;
+}
+
+.c5:hover::after {
+  content: "97%";
+  position: absolute;
+  background: rgba(5, 13, 156, 0.55);
+  color: #fff;
+  text-align: center;
+  font-family: cursive;
+  font-size: 14px;
+  padding: 5px;
+  width: 100%;
+}
+
+.c6:hover::after {
+  content: "85%";
+  position: absolute;
+  background: rgba(5, 13, 156, 0.55);
+  color: #fff;
+  text-align: center;
+  font-family: cursive;
+  font-size: 14px;
+  padding: 5px;
+  width: 100%;
+}
+
+.c7:hover::after {
+  content: "93%";
+  position: absolute;
+  background: rgba(5, 13, 156, 0.55);
+  color: #fff;
+  text-align: center;
+  font-family: cursive;
+  font-size: 14px;
+  padding: 5px;
+  width: 100%;
+}
+
+.c8:hover::after {
+  content: "96%";
+  position: absolute;
+  background: rgba(5, 13, 156, 0.55);
+  color: #fff;
+  text-align: center;
+  font-family: cursive;
+  font-size: 14px;
+  padding: 5px;
+  width: 100%;
+}
+
+.c9:hover::after {
+  content: "97%";
+  position: absolute;
+  background: rgba(5, 13, 156, 0.55);
+  color: #fff;
+  text-align: center;
+  font-family: cursive;
+  font-size: 14px;
+  padding: 5px;
+  width: 100%;
+}
+
+.c10:hover::after {
+  content: "95%";
+  position: absolute;
+  background: rgba(5, 13, 156, 0.55);
+  color: #fff;
+  text-align: center;
+  font-family: cursive;
+  font-size: 14px;
+  padding: 5px;
+  width: 100%;
+}
+
+.left-block {
+  flex: 0 0 60%;
+  display: flex;
+  align-items: center;
+}
+
+.right-block {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* START TOOLTIP STYLES */
+[tooltip] {
+  position: relative;
+  /* opinion 1 */
+}
+
+/* Applies to all tooltips */
+[tooltip]::before,
+[tooltip]::after {
+  line-height: 1;
+}
+
+[tooltip]::after {
+  white-space: nowrap;
+  border-radius: 0.3ch;
+}
+
+/* Make the tooltips respond to hover */
+[tooltip]:hover::before,
+[tooltip]:hover::after {
+  display: block;
+}
+
+/* FLOW: UP */
+[tooltip]:not([flow])::before,
+[tooltip][flow^="up"]::before {
+  bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: #333;
+}
+
+[tooltip]:not([flow])::after,
+[tooltip][flow^="up"]::after {
+  bottom: calc(100% + 5px);
+}
+
+[tooltip]:not([flow])::before,
+[tooltip]:not([flow])::after,
+[tooltip][flow^="up"]::before,
+[tooltip][flow^="up"]::after {
+  left: 50%;
+  transform: translate(-50%, -0.5em);
+}
+
+@keyframes tooltips-vert {
+  to {
+    opacity: 0.9;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* FX All The Things */
+[tooltip]:hover::before,
+[tooltip]:hover::after {
+  animation: tooltips-vert 300ms ease-out forwards;
+}
+
+.main__review {}
+
+.review__title-box {
+  padding: 10px 30px;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+}
+
+.review__title {
+  color: white;
+  font-size: 30px;
+
+}
+
+.review__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.review__card {
+  width: 45%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.466);
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding: 10px;
+  flex-direction: column;
+  color: rgb(183, 183, 183);
+  box-shadow: 9px 9px 14px 5px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.review__card--top {
+  flex: 0 0 20%;
+  padding: 10px;
+}
+
+.review__card--name {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.review__card--game {
+  font-weight: bold;
+}
+
+.review__card--middle {
+  flex: 0 0 65%;
+  border-top: 1px solid rgb(59, 59, 59);
+  border-bottom: 1px solid rgb(59, 59, 59);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.review__card--text {
+  height: 124px;
+  overflow: hidden;
+}
+
+.text--on {
+  height: auto;
+  overflow: visible;
+}
+
+.review__card--next {
+  align-self: end;
+}
+
+.read--more {
+  font-weight: bold;
+  display: block;
+  color: rgb(183, 183, 183);
+
+}
+
+.read--less {
+  font-weight: bold;
+  display: none;
+  color: rgb(183, 183, 183);
+
+}
+
+.btn--hide {
+  display: none;
+}
+
+.btn--show {
+  display: block;
+}
+
+.review__card--buttom {
+  display: flex;
+  flex: 0 0 15%;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.review__card--date {}
+
+.review__card--score {}
+
+
+
+
+
+
+.main__sell {
+  height: 500px;
+}
+
+.sell__title-box {
+  padding: 10px 30px;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.sell__title {
+  color: white;
+  font-size: 30px;
+}
+
+.slider {
+  width: 480Px;
+  height: 320px;
+}
+
+.slider-wrapper {}
+
+.slider-slide {
+  border-radius: 10px;
+  font-size: 22px;
+  color: #fff;
+  background-color: rgb(70, 70, 70);
+  box-shadow: 9px 9px 14px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.slider-slide img {
+  width: 480px;
+  height: 270px;
+}
+
+.block {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(58, 58, 58);
+  align-items: center;
+  padding: 0 15px;
+
+}
+
+.block__procent {
+  color: rgb(0, 239, 0);
+}
+
+.block__price {
+  color: rgb(0, 239, 0);
+
+}
+
+.block__price span{
+  text-decoration: line-through;
+  color: red;
+  margin-left: 10px;
+}
+
+.footer {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__text{
+  font-size: 20px;
+  margin-bottom: 15px;
+}

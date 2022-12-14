@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="nav__item">
+          <img class="logo" src="photo/logo.png" alt="логотип" />
+        </a>
+        <a href="#top" class="nav__item"> Новости </a>
+        <a href="#popular" class="nav__item"> Популярное </a>
+        <a href="#review" class="nav__item"> Обзоры </a>
+        <a href="#sell" class="nav__item"> Скидки </a>
+        <input class="search" type="search" placeholder="Поиск" />
+      </nav>
+    </header>
+    <main class="main">
+      <div class="main__wrapper">
+        <div class="main__news">
+          <div class="news__title">
+            <a name="news">Новости игр</a>
+          </div>
+          <div class="news-wrapper">
+            <a href="https://www.youtube.com/watch?v=4HLDaBGdnLc" class="news__item starwars">
+              <div class="news__item-image">
+                <img class="starwars-photo" src="photo/2.jpg" alt="Картинка из Star Wars Jedi: Survivor" />
+              </div>
+              <div class="news__item-text">
+                Трейлер Star Wars Jedi: Survivor стал самым популярным из
+                показанных на TGA
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=e8xO3mFKElI" class="news__item witcher">
+              <div class="news__item-image">
+                <img class="witcher-photo" src="photo/3.jpg" alt="Картинка из «Ведьмака 3»" />
+              </div>
+              <div class="news__item-text">
+                C полуночи до полудня: когда выходит обновлённая версия
+                «Ведьмака 3»
+              </div>
+            </a>
+            <a href="https://www.youtube.com/watch?v=zrHb2p4YPT0" class="news__item cyberpunk">
+              <div class="news__item-image">
+                <img class="cyberpunk-photo" src="photo/4.jpg" alt="Картинка из Cyberpunk 2077: Phantom Liberty " />
+              </div>
+              <div class="news__item-text">
+                Вышел второй трейлер Cyberpunk 2077: Phantom Liberty
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="main__popular" name="popular">
+          <div class="popular__title-box">
+            <a name="popular" class="popular__title">Популярное</a>
+          </div>
+          <div class="popular__list">
+            <a href="https://store.steampowered.com/app/548430/Deep_Rock_Galactic/" class="popular__card">
+              <div class="left-block">
+                <div class="card__photo"> <img src="photo/deep 2.jpg" alt="картинка из игры Deep Rock Galactic"></div>
+                <span class="card__name">Deep Rock Galactic</span>
+              </div>
+              <div class="right-block">
+                <span class="card__rate c1" tooltip>Положительные</span>
+                <span class="card__price">799 руб.</span>
+              </div>
+            </a>
+            <a href="https://store.steampowered.com/app/570/Dota_2/" class="popular__card" name="popular">
+              <div class="left-block">
+                <div class="card__photo"> <img src="photo/dota.jpg" alt="картинка из игры Dota 2"></div>
+                <span class="card__name">Dota 2</span>
+              </div>
+              <div class="right-block">
+                <span class="card__rate c2" tooltip>Положительные</span>
+                <span class="card__price">Бесплатно</span>
+              </div>
+            </a>
+            <a href="https://store.steampowered.com/app/252490/Rust/" class="popular__card" name="popular">
+              <div class="left-block">
+                <div class="card__photo"> <img src="photo/rust.jpg" alt="Картинка из игры Rust"></div>
+                <span class="card__name">Rust</span>
+              </div>
+              <div class="right-block">
+                <span class="card__rate c3" tooltip>Положительные</span>
+                <span class="card__price">1100 руб.</span>
+              </div>
+            </a>
+            <a href="https://store.steampowered.com/app/1245620/ELDEN_RING/" class="popular__card" name="popular">
+              <div class="left-block">
+                <div class="card__photo"><img src="photo/ELDEN RING.jpg" alt="картинка из игры ELDEN RING "></div>
+                <span class="card__name">ELDEN RING</span>
+              </div>
+              <div class="right-block">
+                <span class="card__rate c4" tooltip>Положительные</span>
+                <span class="card__price">3999 руб.</span>
+              </div>
+            </a>
+            <a href="https://store.steampowered.com/app/739630/Phasmophobia/" class="popular__card" name="popular">
+              <div class="left-block">
+                <div class="card__photo"><img src="photo/Phasmophobia.jpg" alt="картинка из игры Phasmophobia"></div>
+                <span class="card__name">Phasmophobia</span>
+              </div>
+              <div class="right-block">
+                <span class="card__rate c5" tooltip>Положительные</span>
+                <span class="card__price">309 руб.</span>
+              </div>
+            </a>
+            <a href="https://store.steampowered.com/app/1281590/The_Dark_Pictures_Anthology_House_of_Ashes/"
+              class="popular__card" name="popular">
+              <div class="left-block">
+                <div class="card__photo"><img src="photo/the.jpg" alt="картинка из игры The Dark Pictures"></div>
+                <span class="card__name">The Dark Pictures Anthology: House of Ashes</span>
+              </div>
+              <div class="right-block">
+                <span class="card__rate c6" tooltip>Положительные</span>
+                <span class="card__price">1249 руб.</span>
+              </div>
+            </a>
+            <a href="https://store.steampowered.com/app/1313140/Cult_of_the_Lamb/" class="popular__card" name="popular">
+              <div class="left-block">
+                <div class="card__photo"><img src="photo/cult.jpg" alt="картинка из игры Cult of the Lamb "></div>
+                <span class="card__name">Cult of the Lamb</span>
+              </div>
+              <div class="right-block">
+                <span class="card__rate c7" tooltip>Положительные</span>
+                <span class="card__price">699 руб.</span>
+              </div>
+            </a>
+            <a href="https://store.steampowered.com/app/268910/Cuphead/" class="popular__card" name="popular">
+              <div class="left-block">
+                <div class="card__photo"><img src="photo/cuphead.jpg" alt="картинка из игры Cuphead "></Img></div>
+                <span class="card__name">Cuphead</span>
+              </div>
+              <div class="right-block">
+                <span class="card__rate c8" tooltip>Положительные</span>
+                <span class="card__price">293 руб.</span>
+              </div>
+            </a>
+            <a href="https://store.steampowered.com/app/1222140/Detroit_Become_Human/" class="popular__card"
+              name="popular">
+              <div class="left-block">
+                <div class="card__photo"><img src="photo/detroit.jpg"
+                    alt="картинка из игры Detroit: Become Human "></Img>
+                </div>
+                <span class="card__name">Detroit: Become Human</span>
+              </div>
+              <div class="right-block">
+                <span class="card__rate c9" tooltip>Положительные</span>
+                <span class="card__price">1628 руб.</span>
+              </div>
+            </a>
+            <a href="https://store.steampowered.com/app/1604030/V_Rising/" class="popular__card" name="popular">
+              <div class="left-block">
+                <div class="card__photo"><img src="photo/v2.jpg" alt="картинка из игры V Rising"></div>
+                <span class="card__name">V Rising</span>
+              </div>
+              <div class="right-block">
+                <span class="card__rate c10" tooltip>Положительные</span>
+                <span class="card__price">435 руб.</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="main__review">
+          <div class="review__title-box">
+            <a name="review" class="review__title">Недавние отзывы</a>
+          </div>
+          <div class="review__list">
+
+            <div class="review__card">
+              <div class="review__card--top">
+                <div class="review__card--name">
+                  Xelock
+                </div>
+                <div class="review__card--game">
+                  Deep Rock Galactic
+                </div>
+              </div>
+              <div class="review__card--middle">
+                <div class="review__card--text">
+                  =={ Графика }== <br>
+                  ☐ Забудешь, что такое реальность <br>
+                  ☐ Красиво <br>
+                  ☑ Хорошо <br>
+                  ☐ Приемлемо <br>
+                  ☐ Плохо <br>
+                  ☐ Глаза болят <br>
+                  <br>
+                  =={ Игровой процесс }== <br>
+                  ☐ Очень хорошо <br>
+                  ☑ Хорошо <br>
+                  ☐ Геймплей как геймплей <br>
+                  ☐ Нуу такое <br>
+                  <br>
+                  =={ Аудио }== <br>
+                  ☐ Очень хорошо <br>
+                  ☑ Хорошо <br>
+                  ☐ Неплохо <br>
+                  ☐ Плохо <br>
+                  <br>
+                  =={ Аудитория }== <br>
+                  ☐ Дети <br>
+                  ☑ Подростки <br>
+                  ☑ Взрослые <br>
+                  ☐ Дедушки-бабушки <br>
+                  <br>
+                  =={ Тех. требования }== <br>
+                  ☑ Попробуй запустить Paint <br>
+                  ☐ Картошка <br>
+                  ☐ Приемлемые <br>
+                  ☐ Для олигархов <br>
+                  ☐ Попросить у NASA дополнительный ПК <br>
+                  <br>
+                  =={ Сложность }== <br>
+                  ☐ Просто жми 'W' <br>
+                  ☐ Легко <br>
+                  ☑ Легко научиться / Сложно овладеть <br>
+                  ☐ Значительное использование мозга <br>
+                  ☐ Сложно <br>
+                  ☐ Dark Souls <br>
+                  <br>
+                  =={ История }== <br>
+                  ☐ Нет <br>
+                  ☑ Кое-какой лор <br>
+                  ☐ Средний <br>
+                  ☐ Хорошо <br>
+                  ☐ Прекрасно <br>
+                  ☐ Заменит твою жизнь(на смерть) <br>
+                  <br>
+                  =={ Игровое время }== <br>
+                  ☐ Достаточно долго для чашки кофе <br>
+                  ☐ Короткое <br>
+                  ☐ Среднее <br>
+                  ☐ Долго <br>
+                  ☑ От бесконечности и дальше <br>
+                  <br>
+                  =={ Цена }== <br>
+                  ☐ Бесплатно! <br>
+                  ☑ Достойна своей цены <br>
+                  ☐ Только на скидках <br>
+                  ☐ Если остались лишние деньги <br>
+                  ☐ Не рекомендую <br>
+                  ☐ Мог бы просто сжечь свои деньги <br>
+                </div>
+                <div class="review__card--next">
+                  <a href="" onclick="return false" class="read--more">
+                    Читать далее
+                  </a>
+                  <a href="" onclick="return false" class="read--less">
+                    Скрыть
+                  </a>
+                </div>
+              </div>
+              <div class="review__card--buttom">
+                <div class="review__card--date">
+                  14.12.2022
+                </div>
+                <div class="review__card--score">
+                  10/10
+                </div>
+              </div>
+            </div>
+
+            <div class="review__card">
+              <div class="review__card--top">
+                <div class="review__card--name">
+                  Snowpankake
+                </div>
+                <div class="review__card--game">
+                  Phasmophobia
+                </div>
+              </div>
+              <div class="review__card--middle">
+                <div class="review__card--text">
+                  Phasmophobia - это когда ты пытаешься найти улики , а твой друг с крестом позади играет роль
+                  экзорциста крича слова из библии.
+                  Phasmophobia - это когда у тебя не осталось рассудка и каждые 25 секунд идёт охота.
+                  Phasmophobia - это когда уместно после смерти друга сказать "Понял вычёркиваю".
+                  Спасибо разработчику за такую классную игру.
+                </div>
+              </div>
+              <div class="review__card--buttom">
+                <div class="review__card--date">
+                  12.01.2020
+                </div>
+                <div class="review__card--score">
+                  9/10
+                </div>
+              </div>
+            </div>
+
+            <div class="review__card">
+              <div class="review__card--top">
+                <div class="review__card--name">
+                  Vefram
+                </div>
+                <div class="review__card--game">
+                  Mortal Kombat 11
+                </div>
+              </div>
+              <div class="review__card--middle">
+                <div class="review__card--text">
+                  Классный файтинг
+                </div>
+              </div>
+              <div class="review__card--buttom">
+                <div class="review__card--date">
+                  16.01.2021
+                </div>
+                <div class="review__card--score">
+                  10/10
+                </div>
+              </div>
+            </div>
+
+            <div class="review__card">
+              <div class="review__card--top">
+                <div class="review__card--name">
+                  Good Boy
+                </div>
+                <div class="review__card--game">
+                  RimWorld
+                </div>
+              </div>
+              <div class="review__card--middle">
+                <div class="review__card--text">
+                  Уже больше тысячи часов, а эти маленькие людишки до сих пор способны удивлять:<br>
+                  - Поселенцы могут впасть в депрессию, в момент нападения врагов прям посреди поля боя;<br>
+                  - Поджог собственной базы (никогда не принимайте в лагерь пироманов!);<br>
+                  - Завести отношения, пожениться;<br>
+                </div>
+              </div>
+              <div class="review__card--buttom">
+                <div class="review__card--date">
+                  21.08.2022
+                </div>
+                <div class="review__card--score">
+                  8/10
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="main__sell">
+          <div class="sell__title-box">
+            <a name="sell" class="sell__title">Скидки</a>
+          </div>
+          <div class="slider swiper">
+            <div class="slider-wrapper swiper-wrapper">
+              <div class="slider-slide swiper-slide">
+                <img src="photo/vampyr.jpg" alt="">
+                <div class="block">
+                  <div class="block__price">299р.<span>1499р.</span></div>
+                  <div class="block__procent">-80%</div>
+                </div>
+              </div>
+              <div class="slider-slide swiper-slide">
+                <img src="photo/amogus.jpg" alt="">
+                <div class="block">
+                  <div class="block__price">99р.<span>133р.</span></div>
+                  <div class="block__procent">-26%</div>
+                </div>
+              </div>
+              <div class="slider-slide swiper-slide">
+                <img src="photo/potion.jpg" alt="">
+                <div class="block">
+                  <div class="block__price">288р.<span>360р.</span></div>
+                  <div class="block__procent">-20%</div>
+                </div>
+              </div>
+              <div class="slider-slide swiper-slide">
+                <img src="photo/hunt.jpg" alt="">
+                <div class="block">
+                  <div class="block__price">539р.<span>1349р.</span></div>
+                  <div class="block__procent">-60%</div>
+                </div>
+              </div>
+              <div class="slider-slide swiper-slide">
+                <img src="photo/rdr2.jpg" alt="">
+                <div class="block">
+                  <div class="block__price">1749р.<span>2499р.</span></div>
+                  <div class="block__procent">-30%</div>
+                </div>
+              </div>
+              <div class="slider-slide swiper-slide">
+                <img src="photo/drg.jpg" alt="">
+                <div class="block">
+                  <div class="block__price">399р.<span>799р.</span></div>
+                  <div class="block__procent">-50%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__text">testsite1@mail.ru</div>
+      <a href="#" class="footer__text">Информация</a>
+      <a href="#" class="footer__text">Политика конфиденциальности</a>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
